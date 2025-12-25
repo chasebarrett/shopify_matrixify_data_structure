@@ -66,7 +66,7 @@ flowchart LR
   subgraph Shopify
     P[Products and Variants]
     N[Native Fields\Core product data\SKU Barcode Price]
-    F[Metafields\Custom data\nnamespace.key]
+    F[Metafields\Custom data\namespace.key]
     K[Markets Pricing\Country specific pricing]
   end
 
@@ -78,3 +78,6 @@ flowchart LR
   P -->|Controls| K
 
 ```
+## 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
