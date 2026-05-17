@@ -127,21 +127,21 @@ flowchart TB
   S --> P[Product level]
   S --> V[Variant level]
 
-  P --> N1[Native Product Fields\Title Description Vendor Product Type]
-  P --> M1[Product Metafields\Metafield: namespace.key\Custom product data]
+  P --> N1[Native Product Fields<br/>Title Description Vendor Product Type]
+  P --> M1[Product Metafields<br/>Metafield: namespace.key<br/>Custom product data]
 
-  V --> N2[Native Variant Fields\SKU Barcode Options Weight Price]
-  V --> M2[Variant Metafields\Variant Metafield: namespace.key\Custom variant data]
+  V --> N2[Native Variant Fields<br/>SKU Barcode Options Weight Price]
+  V --> M2[Variant Metafields<br/>Variant Metafield: namespace.key<br/>Custom variant data]
 
-  S --> U[Unstructured Metafields\No definition in Shopify\Often legacy or app created]
+  S --> U[Unstructured Metafields<br/>No definition in Shopify<br/>Often legacy or app created]
 
-  U --> U1[Examples\magento.short_description\judgeme.badge]
+  U --> U1[Examples<br/>magento.short_description<br/>judgeme.badge]
 
   N1 --> A1[Where Shopify and apps expect data]
   N2 --> A1
   M1 --> A2[Use when no native field exists]
   M2 --> A2
-  U --> A3[Review and clean up\Keep only if needed]
+  U --> A3[Review and clean up<br/>Keep only if needed]
 
 ```
 ---
