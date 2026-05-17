@@ -23,17 +23,19 @@ If no ID is present, Matrixify falls back to the **Handle**.
 ### Handle + Command Behavior
 
 **Updating an existing product**
+```
 Handle: drago-xt
 Command: UPDATE
-
+```
 
 Result:  
 The existing *Drago XT* product is updated.
 
 **Incorrect command**
+```
 Handle: drago-xt
 Command: NEW
-
+```
 
 Result:  
 A second *Drago XT* product is created, resulting in a duplicate PDP.
