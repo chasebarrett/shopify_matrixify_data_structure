@@ -56,20 +56,20 @@ flowchart TD
   B -->|Yes| C[Match exact product by ID]
   C --> D[Apply Command to matched product]
 
-  B -->|No| E[No ID\Use Handle as identifier]
+  B -->|No| E[No ID<br/>Use Handle as identifier]
   E --> F{Command}
 
   F -->|UPDATE| U1[Find product by Handle]
   U1 --> U2[Update existing product]
-  U2 --> U3[Outcome\Existing PDP updated]
+  U2 --> U3[Outcome<br/>Existing PDP updated]
 
   F -->|NEW| N1[Create new product]
   N1 --> N2[Use Handle for product URL]
-  N2 --> N3[Outcome\New PDP created]
-  N3 --> N4[Risk\If Handle already exists\Duplicate product may be created\nOr handle adjusted]
+  N2 --> N3[Outcome<br/>New PDP created]
+  N3 --> N4[Risk<br/>If Handle already exists<br/>Duplicate product may be created<br/>Or handle adjusted]
 
   F -->|DELETE| X1[Delete product]
-  X1 --> X2[Matched by ID if present\Otherwise matched by Handle]
+  X1 --> X2[Matched by ID if present<br/>Otherwise matched by Handle]
 ```
 ## 📚 Reference Documentation
 
