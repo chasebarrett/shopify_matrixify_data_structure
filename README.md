@@ -1,3 +1,6 @@
+# Shopify Data Governance: Metafields, Markets & Matrixify
+**Internal Documentation Framework | Data Modeling | Import Safety**
+
 ## 🧠 Executive Summary
 
 Shopify stores product data in three primary ways:
@@ -65,9 +68,9 @@ flowchart LR
 
   subgraph Shopify
     P[Products and Variants]
-    N[Native Fields\Core product data\SKU Barcode Price]
-    F[Metafields\Custom data\namespace.key]
-    K[Markets Pricing\Country specific pricing]
+    N[Native Fields<br/>Core product data<br/>SKU Barcode Price]
+    F[Metafields<br/>Custom data<br/>namespace.key]
+    K[Markets Pricing<br/>Country specific pricing]
   end
 
   M -->|Import updates| P
