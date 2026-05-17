@@ -1,6 +1,10 @@
 # Shopify Data Governance: Metafields, Markets & Matrixify
 **Internal Documentation Framework | Data Modeling | Import Safety**
 
+This repository is a plain-language guide to how Shopify stores product data and how Matrixify safely moves that data in and out at scale. Written originally as internal documentation at SCARPA North America, it explains the concepts that most often trip people up — native fields versus metafields, how market-specific pricing actually works, and which import commands prevent (or accidentally create) duplicate products.
+
+It reflects how I approach data governance: explain the system clearly enough that the right decisions become the obvious ones.
+
 ## 🧠 Executive Summary
 
 Shopify stores product data in three primary ways:
@@ -14,6 +18,7 @@ Shopify stores product data in three primary ways:
 - [Metafields & Native Fields](docs/metafields.md)
 - [Markets Pricing](docs/markets-pricing.md)
 - [Matrixify Import Rules](docs/matrixify-imports.md)
+- [Handle & Command (Matrixify Import Matching)](docs/handle-and-command.md)
 
 **Matrixify** is the tool used to safely import and export this data at scale.
 
