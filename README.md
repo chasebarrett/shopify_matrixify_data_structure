@@ -5,6 +5,19 @@ This repository is a plain-language guide to how Shopify stores product data and
 
 It reflects how I approach data governance: explain the system clearly enough that the right decisions become the obvious ones.
 
+---
+
+## Table of Contents
+- [Executive Summary](#-executive-summary)
+- [Documentation](#-documentation)
+- [Common Failure Modes](#%EF%B8%8F-common-failure-modes-and-why-were-careful)
+- [Quick Decision Guide](#-quick-decision-guide)
+- [Reference Documentation](#-reference-documentation)
+- [How Data Moves Around](#-how-data-moves-around)
+- [License](#-license)
+
+---
+
 ## 🧠 Executive Summary
 
 Shopify stores product data in three primary ways:
@@ -13,7 +26,9 @@ Shopify stores product data in three primary ways:
 - **Metafields** → Custom data when no native field exists
 - **Markets pricing** → Country-specific prices and availability
 
-## Documentation
+---
+
+## 📂 Documentation
 
 - [Metafields & Native Fields](docs/metafields.md)
 - [Markets Pricing](docs/markets-pricing.md)
@@ -64,12 +79,13 @@ This documentation exists primarily to prevent these scenarios.
 Matrixify product documentation:  
 https://matrixify.app/documentation/products/
 
+---
 
-## How Data Moves Around
+## 📊 How Data Moves Around
 
 ```mermaid
 flowchart LR
-  M[Matrixify\Import and Export Tool]
+  M[Matrixify<br/>Import and Export Tool]
 
   subgraph Shopify
     P[Products and Variants]
@@ -84,8 +100,10 @@ flowchart LR
   P -->|Stores| N
   P -->|Stores| F
   P -->|Controls| K
-
 ```
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
